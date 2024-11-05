@@ -517,3 +517,117 @@ html {
         opacity: 1;
     }
 }
+
+
+/* Section Background and Title Styling */
+#projects {
+    background-color: #34A853;
+    padding: 50px 20px;
+    color: #333333; /* Darker color for text */
+    text-align: center;
+}
+.projects-section h1{
+    color: black;
+}
+.projects-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Projects Container and Card Styling */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.project-card {
+    background-color: #ffffff; /* White background for cards */
+    color: #333333;
+    width: 300px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px); /* Hover effect: lift up */
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.project-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.project-description {
+    font-size: 1em;
+    padding: 0 20px 20px;
+    color: #666666;
+}
+
+
+
+
+/* footer */
+/* Footer Section Styling */
+.footer-section {
+    background-color: #DB4437; /* Red background color */
+    padding: 40px 0;
+    color: #ffffff; /* White text color */
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-title {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links a {
+    color: #ffffff; /* White color for links */
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
+.footer-note {
+    font-size: 0.9em;
+    margin-top: 20px;
+    color: #e0e0e0; /* Slightly lighter color for note */
+}
