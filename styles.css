@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700&display=swap");
+
+
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +22,9 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    background: white;
+    background-color: #1a1a1a;
+    color: white;
+    opacity: 1;
     z-index: 999;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -35,8 +40,8 @@ nav {
 }
 
 .menu-btn {
-    background: #1a1a1a;
-    color: white;
+    background: white;
+    color: #1a1a1a;
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 20px;
@@ -45,8 +50,7 @@ nav {
 }
 
 .menu-btn:hover {
-    background: #333;
-    transform: translateY(-2px);
+    background: #8590A6;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -99,7 +103,7 @@ main {
 .belowSymbol {
     font-size: 2.5rem;
     font-weight: 900;
-    color: gray;
+    color: rgb(185, 181, 181);
     margin-top: 1rem;
     max-width: 800px;
 }
@@ -124,6 +128,7 @@ h1 {
 .social-icons {
     display: flex;
     gap: 1.5rem;
+    margin-left: 45%;
 }
 
 .social-icons img {
@@ -131,6 +136,7 @@ h1 {
     height: 24px;
     opacity: 0.7;
     transition: opacity 0.3s;
+    
 }
 
 .social-icons img:hover {
@@ -139,7 +145,6 @@ h1 {
 
 .team-section {
     min-height: 100vh;
-    background-color: #4285F4;
     padding: 4rem 2rem;
     color: white;
 }
@@ -395,18 +400,18 @@ html {
 
 .events-section {
     min-height: 100vh;
-    background-color: #FBBC04;
     position: relative;
     padding: 4rem 2rem;
 }
-
+.events-section h1{
+    color: whitesmoke;
+}
 .events-title {
     text-align: center;
     font-size: 4rem;
-    color: black;
     margin-bottom: 3rem;
-    opacity: 0;
     transform: translateY(50px);
+    opacity: 0.9;
 }
 
 .events-title.visible {
@@ -477,51 +482,8 @@ html {
     }
 }
 
-/* PRELOADER */
-.preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    transition: opacity 0.5s ease;
-}
-
-.preloader.fade-out {
-    opacity: 0;
-    pointer-events: none;
-}
-
-.preloader img {
-    width: 270px;
-    height: 150px;
-    animation: pulse 1.5s ease infinite;
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-        opacity: 1;
-    }
-    50% {
-        transform: scale(1.1);
-        opacity: 0.8;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-
 /* Section Background and Title Styling */
 #projects {
-    background-color: #34A853;
     padding: 50px 20px;
     color: #333333; /* Darker color for text */
     text-align: center;
@@ -630,4 +592,177 @@ html {
     font-size: 0.9em;
     margin-top: 20px;
     color: #e0e0e0; /* Slightly lighter color for note */
+}
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Canvas for the Particle Animation */
+/* Canvas Background */
+#particleCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #1a1a1a;
+}
+
+
+/* Main Content */
+.content {
+    position: relative;
+    color: #ffffff;
+    padding: 50px;
+    text-align: center;
+    z-index: 1;
+}
+h2{
+    color: white;
+}
+
+
+#contact-form {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    max-width: 600px; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+#contact-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}.contact-heading {
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    color: #4285F4; /* Google's primary blue */
+    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.container .btn {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 250px;
+	height: 50px;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    scale: 80%;
+}
+.container .btn a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(255, 255, 255, 0.05);
+	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 30px;
+	padding: 10px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	overflow: hidden;
+	color: #fff;
+	font-weight: 400px;
+	z-index: 1;
+	transition: 0.5s;
+	backdrop-filter: blur(15px);
+}
+.container .btn:hover a {
+	letter-spacing: 3px;
+}
+.container .btn a::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+	transform: skewX(45deg) translate(0);
+	transition: 0.5s;
+	filter: blur(0px);
+}
+.container .btn:hover a::before {
+	transform: skewX(45deg) translate(200px);
+}
+.container .btn::before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+	bottom: -5px;
+	width: 30px;
+	height: 10px;
+	background: #2db2ff;
+	border-radius: 10px;
+	transition: 0.5s;
+	transition-delay: 0.5;
+}
+.container .btn:hover::before /*lightup button*/ {
+	bottom: 0;
+	height: 50%;
+	width: 80%;
+	border-radius: 30px;
+}
+
+.container .btn:hover::after /*lightup button*/ {
+	top: 0;
+	height: 50%;
+	width: 80%;
+	border-radius: 30px;
+}
+.fade-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
 }

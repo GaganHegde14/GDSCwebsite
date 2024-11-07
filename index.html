@@ -10,10 +10,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="preloader">
-        <img src="./assets/logoNObg.png" alt="GDSC Logo">
-    </div>
-
+    <canvas id="particleCanvas"></canvas>
     <nav>
         <div class="logo">
            <a href="index.html"><img src="./assets/logoNObg.png" alt="GDSC Logo">
@@ -28,7 +25,7 @@
             <div class="nav-header">
                 <div class="logo">
                     <img src="./assets/logoNObg.png" alt="GDSC Logo">
-                    <span>GDSC-VIT</span>
+                    <span>GDSC-CIT</span>
                 </div>
                 <button class="close-btn">Close</button>
             </div>
@@ -36,9 +33,9 @@
                 <a href="#home">Home</a>
                 <a href="#team">Team</a>
                 <a href="#events">Events</a>
-                <a href="#projects">Projects</a>
+                <a href="#Projects">Projects</a>
 
-                <a href="#footer">Contact Us</a>
+                <a href="#contact">Contact Us</a>
             </div>
         </div>
     </div>
@@ -56,13 +53,14 @@
                     </div>
                 </div>
                 <div class="text-section">
-                    <h1>WE ARE GDSC-CIT</h1>
+                    <h2>WE ARE GDSC-CIT</h2>
                     <p class="description">
                         The Google Club at our college is a community for tech enthusiasts passionate about innovation, collaboration, and learning. We host workshops, seminars, hackathons, and quizzes to build skills in programming, AI, web development, and more. Our mission is to empower students, foster creativity, and bridge the gap between technology and education.
                     </p>
                     <p class="events">
                         Our mission is to empower students, foster creativity, and bridge the gap between technology and education.
                     </p>
+
                     <div class="social-icons">
                         <a href="https://www.instagram.com/gdg.cit?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="./assets/instagram.png" alt="Instagram" style="width: 32px; height: 32px;"></a>
                         <a href="https://www.linkedin.com/company/gdsccit/?fbclid=PAZXh0bgNhZW0CMTEAAab0hwgPhuu_vaiqs3fyXHA3MRrJhNfY1G5dgh1R3Bvy16G5bXAL-OZgqOk_aem_Xk_1wZqglW597CshVFYOdg"><img src="./assets/linkedin.png" alt="LinkedIn" style="width: 32px; height: 32px;"></a>
@@ -175,78 +173,72 @@
                 </div>
             </div>
         </section>
-        <section class="projects-section" id="projects">
-            <h1>Projects</h1>
-            <div class="projects-container">
-                
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/project.png" alt="Project One">
+
+        <section class="events-section" id="Projects">
+            <h1 class="events-title">Projects</h1>
+            <div class="events-container">
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="assets/hackPic.jpeg" alt="Hackathon">
                     </div>
-                    <h3 class="project-title">Project One</h3>
-                    <p class="project-description">An innovative solution to automate tasks and increase productivity.</p>
+                    <h3 class="event-title">Hackathons</h3>
+                    <p class="event-description">A 24-hour hackathon bringing together developers to create innovative solutions.</p>
                 </div>
-        
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/project.png" alt="Project Two">
+
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="./assets/noProfile.png" alt="Quizzes">
                     </div>
-                    <h3 class="project-title">Project Two</h3>
-                    <p class="project-description">A collaborative platform designed to enhance team communication and project management.</p>
+                    <h3 class="event-title">Quizzes</h3>
+                    <p class="event-description">Engaging quizzes challenge knowledge, encourage learning, and spark friendly competition.</p>
                 </div>
-        
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/project.png" alt="Project Three">
+
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="./assets/workPic.jpeg" alt="Workshops">
                     </div>
-                    <h3 class="project-title">Project Three</h3>
-                    <p class="project-description">A mobile application that promotes personal well-being and mental health.</p>
+                    <h3 class="event-title">Workshops</h3>
+                    <p class="event-description">Hands-on workshops provide practical skills, expert guidance, and collaborative learning.</p>
                 </div>
-        
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/project.png" alt="Project Four">
+
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="./assets/semiPic.jpeg" alt="Seminars">
                     </div>
-                    <h3 class="project-title">Project Four</h3>
-                    <p class="project-description">A data visualization tool for analyzing trends and insights in real-time.</p>
+                    <h3 class="event-title">Seminars</h3>
+                    <p class="event-description">Our club's seminars offer insightful discussions, expert talks, and skill-building opportunities.</p>
                 </div>
-        
             </div>
         </section>
+
         
-        <footer class="footer-section" id="footer">
-            <div class="footer-container">
-                <ul class="footer-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#events">Events</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-                <p class="footer-note">&copy; 2024 Your Company. All Rights Reserved.</p>
+        <section>
+            <div class="text-section" id="contact">
+                <h1 class="contact-heading">Connect with Us</h1>
+                <form id="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                <div class="container">
+                    <div class="btn"><a href="#" >Send Message</a>
+                    </div>
+                </form>
+                
             </div>
-        </footer>
+        </div>
+        </section>
+        
         
         
     </main>
 
     <!-- Add this before closing body tag -->
-    <script>
-        // Create an Intersection Observer
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                // If the element is visible
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, {
-            threshold: 0.1 // Trigger when at least 10% of the element is visible
-        });
-
-        // Observe the team title
-        const teamTitle = document.querySelector('.team-title');
-        observer.observe(teamTitle);
-    </script>
+  
     <script src="script.js"></script>
 </body>
 </html>
