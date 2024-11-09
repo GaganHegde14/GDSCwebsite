@@ -1,9 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const track = document.querySelector('.card-track');
     const cards = document.querySelectorAll('.card');
-    const menuBtn = document.querySelector('.menu-btn');
-    const closeBtn = document.querySelector('.close-btn');
-    const navMenu = document.querySelector('.nav-menu');
+
     const navLinks = document.querySelectorAll('.nav-links a');
     const eventSlides = document.querySelectorAll('.event-slide');
     
@@ -23,21 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const clone = card.cloneNode(true);
         track.appendChild(clone);
     });
-
-    menuBtn.addEventListener('click', () => {
-        navMenu.classList.add('active');
-    });
-
-    closeBtn.addEventListener('click', () => {
-        navMenu.classList.remove('active');
-    });
-
-    // Add click handlers for navigation links
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            navMenu.classList.remove('active'); // Close menu when link is clicked
-        });
-    });
+   
 
     // Create an Intersection Observer
     const observer = new IntersectionObserver((entries) => {
