@@ -441,7 +441,7 @@ html {
 /* Section Background and Title Styling */
 #projects {
     padding: 50px 20px;
-    color: #333333; /* Darker color for text */
+    color: #333333;
     text-align: center;
 }
 .projects-section h1{
